@@ -1,7 +1,9 @@
+import Typography from "@mui/material/Typography";
+
 export default function DatatableHomePage() {
     return (
         <>
-            <h1>Datatable</h1>
+            <Typography variant="h1">Datatable</Typography>
         </>
     );
 }
