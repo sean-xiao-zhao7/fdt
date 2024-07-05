@@ -2,10 +2,12 @@ import { createContext, useContext, useState, useMemo } from "react";
 import { Outlet } from "react-router-dom";
 
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
-import IconButton from "@mui/material/IconButton";
+import CssBaseline from "@mui/material/CssBaseline";
+
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 
+import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
@@ -68,6 +70,7 @@ export default function ToggleColorMode() {
     return (
         <ColorModeContext.Provider value={colorMode}>
             <ThemeProvider theme={theme}>
+                <CssBaseline />
                 <MainLayout />
             </ThemeProvider>
         </ColorModeContext.Provider>
