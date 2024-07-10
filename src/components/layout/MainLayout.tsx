@@ -11,6 +11,7 @@ import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 
 const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
@@ -19,28 +20,35 @@ const MainLayout = function () {
     const colorMode = useContext(ColorModeContext);
 
     return (
-        <Box sx={{ width: "100%", maxWidth: 500 }}>
-            <ButtonGroup
-                variant="contained"
-                size="large"
-                aria-label="Main menu"
-            >
-                <Button>
-                    <Link to="/dashboard-home">Dashboard</Link>
-                </Button>
-                <Button>
-                    <Link to="/datatable-home">Datatable</Link>
-                </Button>
-                <IconButton onClick={colorMode.toggleColorMode} color="inherit">
-                    {theme.palette.mode === "dark" ? (
-                        <Brightness7Icon />
-                    ) : (
-                        <Brightness4Icon />
-                    )}
-                </IconButton>
-            </ButtonGroup>
-            <Outlet />
-        </Box>
+        <Grid container justifyContent="center">
+            <Box>
+                <Grid container spacing={1}>
+                    <Grid item>
+                        <Button variant="contained" size="large">
+                            <Link to="/dashboard-home">Dashboard</Link>
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <Button variant="contained" size="large">
+                            <Link to="/datatable-home">Datatable</Link>
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <IconButton
+                            onClick={colorMode.toggleColorMode}
+                            color="inherit"
+                        >
+                            {theme.palette.mode === "dark" ? (
+                                <Brightness7Icon />
+                            ) : (
+                                <Brightness4Icon />
+                            )}
+                        </IconButton>
+                    </Grid>
+                </Grid>
+                <Outlet />
+            </Box>
+        </Grid>
     );
 };
 
