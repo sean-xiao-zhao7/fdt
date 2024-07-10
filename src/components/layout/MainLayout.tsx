@@ -63,6 +63,18 @@ export default function ToggleColorMode() {
                 palette: {
                     mode,
                 },
+                components: {
+                    MuiButtonBase: {
+                        defaultProps: {
+                            disableRipple: true,
+                        },
+                    },
+                },
+                typography: {
+                    h1: {
+                        fontSize: "1.8rem",
+                    },
+                },
             }),
         [mode]
     );
