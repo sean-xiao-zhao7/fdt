@@ -9,7 +9,6 @@ import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
@@ -20,7 +19,7 @@ const MainLayout = function () {
     const colorMode = useContext(ColorModeContext);
 
     return (
-        <Grid container justifyContent="center">
+        <Grid container justifyContent="center" sx={{ padding: "2rem" }}>
             <Box>
                 <Grid container spacing={1}>
                     <Grid item>
@@ -46,7 +45,9 @@ const MainLayout = function () {
                         </IconButton>
                     </Grid>
                 </Grid>
-                <Outlet />
+                <Box sx={{ padding: "1rem 0" }}>
+                    <Outlet />
+                </Box>
             </Box>
         </Grid>
     );
@@ -81,6 +82,7 @@ export default function ToggleColorMode() {
                 typography: {
                     h1: {
                         fontSize: "1.8rem",
+                        textAlign: "center",
                     },
                 },
             }),
