@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useMemo } from "react";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 import { useTheme, ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -25,13 +25,13 @@ const MainLayout = function () {
                 size="large"
                 aria-label="Main menu"
             >
-                <Button>Dashboard</Button>
-                <Button>Data Table</Button>
-                <IconButton
-                    sx={{ ml: 1 }}
-                    onClick={colorMode.toggleColorMode}
-                    color="inherit"
-                >
+                <Button>
+                    <Link to="/dashboard-home">Dashboard</Link>
+                </Button>
+                <Button>
+                    <Link to="/datatable-home">Datatable</Link>
+                </Button>
+                <IconButton onClick={colorMode.toggleColorMode} color="inherit">
                     {theme.palette.mode === "dark" ? (
                         <Brightness7Icon />
                     ) : (
