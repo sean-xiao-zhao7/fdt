@@ -21,7 +21,7 @@ const MainLayout = function () {
     return (
         <Grid container justifyContent="center" sx={{ padding: "2rem" }}>
             <Box>
-                <Grid container spacing={1}>
+                <Grid container justifyContent={"center"} spacing={1}>
                     <Grid item>
                         <Button variant="contained" size="large">
                             <Link to="/dashboard-home">Dashboard</Link>
