@@ -1,4 +1,4 @@
-import { ArticleType } from "../../data/articles";
+import { ArticleType } from "../../store/data/articles";
 import SingleArticleListItem from "./SingleArticleItem";
 
 export default function AllArticleList({

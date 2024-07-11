@@ -1,4 +1,4 @@
-export const articles: ArticleType[] = [
+export const dummyArticles: ArticleType[] = [
     {
         title: "Article 1",
         intro: "Intro to Article 1",
