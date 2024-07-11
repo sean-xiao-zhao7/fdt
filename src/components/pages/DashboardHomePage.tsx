@@ -18,10 +18,7 @@ export default function DashboardHomePage() {
             >
                 <ListItem alignItems="flex-start">
                     <ListItemAvatar>
-                        <Avatar
-                            alt="Remy Sharp"
-                            src="/static/images/avatar/1.jpg"
-                        />
+                        <Avatar src="/static/images/avatar/1.jpg" />
                     </ListItemAvatar>
                     <ListItemText
                         primary="Brunch this weekend?"
