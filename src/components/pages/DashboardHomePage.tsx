@@ -7,7 +7,9 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
-import { LinearProgress } from "@mui/material";
+import { Box, LinearProgress } from "@mui/material";
+import Fab from "@mui/material/Fab";
+import AddIcon from "@mui/icons-material/Add";
 
 export default function DashboardHomePage() {
     const allArticles = useAppSelector((state) => state.articles.articles);
@@ -26,6 +28,11 @@ export default function DashboardHomePage() {
     return (
         <>
             <Typography variant="h1">Dashboard</Typography>
+            <Fab variant="extended" color="primary" aria-label="add">
+                <AddIcon sx={{ mr: 1 }} />
+                New Article
+            </Fab>
+            <Typography variant="h2">All Articles</Typography>
             <List
                 sx={{
                     width: "100%",

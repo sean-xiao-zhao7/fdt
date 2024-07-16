@@ -84,6 +84,10 @@ export default function ToggleColorMode() {
                         fontSize: "1.8rem",
                         textAlign: "center",
                     },
+                    h2: {
+                        fontSize: "1.4rem",
+                        textAlign: "center",
+                    },
                 },
             }),
         [mode]
