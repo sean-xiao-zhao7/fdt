@@ -11,6 +11,7 @@ import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
+import { Container } from "@mui/material";
 
 const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
@@ -19,7 +20,7 @@ const MainLayout = function () {
     const colorMode = useContext(ColorModeContext);
 
     return (
-        <Grid container justifyContent="center" sx={{ padding: "2rem" }}>
+        <Container maxWidth="lg" sx={{ padding: "2% 0" }}>
             <Box>
                 <Grid container justifyContent={"center"} spacing={1}>
                     <Grid item>
@@ -49,7 +50,7 @@ const MainLayout = function () {
                     <Outlet />
                 </Box>
             </Box>
-        </Grid>
+        </Container>
     );
 };
 
@@ -82,7 +83,7 @@ export default function ToggleColorMode() {
                 typography: {
                     h1: {
                         fontSize: "1.8rem",
-                        textAlign: "center",
+                        // textAlign: "center",
                     },
                     h2: {
                         fontSize: "1.4rem",
