@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import type { RootState } from "../store";
-import { ArticleType } from "../data/articles";
+import { ArticleType, dummyArticles } from "../data/articles";
 
 // Define a type for the slice state
 interface articlesState {
@@ -10,7 +10,7 @@ interface articlesState {
 
 // Define the initial state using that type
 const initialState: articlesState = {
-    articles: [],
+    articles: dummyArticles,
 };
 
 export const articlesSlice = createSlice({

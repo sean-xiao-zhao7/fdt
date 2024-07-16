@@ -16,29 +16,6 @@ export default function DashboardHomePage() {
                     bgcolor: "background.paper",
                 }}
             >
-                <ListItem alignItems="flex-start">
-                    <ListItemAvatar>
-                        <Avatar src="/static/images/avatar/1.jpg" />
-                    </ListItemAvatar>
-                    <ListItemText
-                        primary="Brunch this weekend?"
-                        secondary={
-                            <>
-                                <Typography
-                                    sx={{ display: "inline" }}
-                                    component="span"
-                                    variant="body2"
-                                    color="text.primary"
-                                >
-                                    Ali Connors
-                                </Typography>
-                                {
-                                    " — I'll be in your neighborhood doing errands this…"
-                                }
-                            </>
-                        }
-                    />
-                </ListItem>
                 <Divider variant="inset" component="li" />
                 <ListItem alignItems="flex-start">
                     <ListItemAvatar>
@@ -61,33 +38,6 @@ export default function DashboardHomePage() {
                                 </Typography>
                                 {
                                     " — Wish I could come, but I'm out of town this…"
-                                }
-                            </>
-                        }
-                    />
-                </ListItem>
-                <Divider variant="inset" component="li" />
-                <ListItem alignItems="flex-start">
-                    <ListItemAvatar>
-                        <Avatar
-                            alt="Cindy Baker"
-                            src="/static/images/avatar/3.jpg"
-                        />
-                    </ListItemAvatar>
-                    <ListItemText
-                        primary="Oui Oui"
-                        secondary={
-                            <>
-                                <Typography
-                                    sx={{ display: "inline" }}
-                                    component="span"
-                                    variant="body2"
-                                    color="text.primary"
-                                >
-                                    Sandra Adams
-                                </Typography>
-                                {
-                                    " — Do you have Paris recommendations? Have you ever…"
                                 }
                             </>
                         }

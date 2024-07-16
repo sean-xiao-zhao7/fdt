@@ -1,32 +1,18 @@
 export const dummyArticles: ArticleType[] = [
     {
-        title: "Article 1",
-        intro: "Intro to Article 1",
-        body: "Body of article one",
+        title: "Brunch this weekend?",
+        intro: "A quick question",
+        body: " I'll be in your neighborhood doing errands this…",
+        author: "Ali Connors",
+        imageURL: "/static/images/avatar/1.jpg",
         dateAdded: Date.now().toLocaleString(),
     },
     {
-        title: "Article 2",
-        intro: "Intro to Article 2",
-        body: "Body of article 2",
-        dateAdded: Date.now().toLocaleString(),
-    },
-    {
-        title: "Article 3",
-        intro: "Intro to Article 3",
-        body: "Body of article 3",
-        dateAdded: Date.now().toLocaleString(),
-    },
-    {
-        title: "Article 4",
-        intro: "Intro to Article 4",
-        body: "Body of article 4",
-        dateAdded: Date.now().toLocaleString(),
-    },
-    {
-        title: "Article 5",
-        intro: "Intro to Article 5",
-        body: "Body of article 5",
+        title: "Summer BBQ",
+        intro: "to Scott, Alex, Jennifer",
+        body: " — Wish I could come, but I'm out of town this…",
+        author: "Travis Howard",
+        imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
     },
 ];
@@ -35,5 +21,7 @@ export type ArticleType = {
     title: string;
     intro: string;
     body: string;
+    author: string;
+    imageURL: string;
     dateAdded: string;
 };
