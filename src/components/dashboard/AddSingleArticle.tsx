@@ -5,9 +5,8 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import Divider from "@mui/material/Divider";
 
-export default function AddSingleArticle({ open, handleClose }) {
+export default function AddSingleArticle({ open, handleClose, handleSubmit }) {
     return (
         <Dialog
             open={open}
@@ -17,15 +16,7 @@ export default function AddSingleArticle({ open, handleClose }) {
             scroll={"paper"}
             PaperProps={{
                 component: "form",
-                onSubmit: (event: React.FormEvent<HTMLFormElement>) => {
-                    event.preventDefault();
-                    const formData = new FormData(event.currentTarget);
-                    const formJson = Object.fromEntries(
-                        (formData as any).entries()
-                    );
-                    const email = formJson.email;
-                    handleClose();
-                },
+                onSubmit: handleSubmit,
             }}
         >
             <DialogTitle>New Article</DialogTitle>
@@ -68,8 +59,12 @@ export default function AddSingleArticle({ open, handleClose }) {
                 />
             </DialogContent>
             <DialogActions>
-                <Button onClick={handleClose}>Cancel</Button>
-                <Button type="submit">Subscribe</Button>
+                <Button onClick={handleClose} variant="contained">
+                    Cancel
+                </Button>
+                <Button type="submit" variant="contained">
+                    Submit
+                </Button>
             </DialogActions>
         </Dialog>
     );

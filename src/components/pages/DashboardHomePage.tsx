@@ -1,4 +1,5 @@
 import { useAppSelector } from "../../store/hooks";
+import { useState } from "react";
 
 import { LinearProgress, Paper } from "@mui/material";
 import List from "@mui/material/List";
@@ -10,7 +11,6 @@ import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
-import { useState } from "react";
 import AddSingleArticle from "../dashboard/AddSingleArticle";
 
 export default function DashboardHomePage() {
@@ -23,6 +23,18 @@ export default function DashboardHomePage() {
 
     const closeNewArticleModal = () => {
         setAddNewArticle(false);
+    };
+
+    const submitNewArticle = (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const formJson = Object.fromEntries((formData as any).entries());
+        const title = formJson.title;
+        const intro = formJson.intro;
+        const body = formJson.body;
+        const author = "Travis Howard";
+        const dateAdded = Date.now().toLocaleString();
+        closeNewArticleModal();
     };
 
     if (!allArticles) {
@@ -41,6 +53,7 @@ export default function DashboardHomePage() {
             <AddSingleArticle
                 open={addNewArticle}
                 handleClose={closeNewArticleModal}
+                handleSubmit={submitNewArticle}
             />
             <Typography variant="h1" sx={{ marginLeft: "0.5rem" }}>
                 Dashboard
