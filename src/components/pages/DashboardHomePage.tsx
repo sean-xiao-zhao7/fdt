@@ -10,9 +10,20 @@ import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
+import { useState } from "react";
+import AddSingleArticle from "../dashboard/AddSingleArticle";
 
 export default function DashboardHomePage() {
     const allArticles = useAppSelector((state) => state.articles.articles);
+    const [addNewArticle, setAddNewArticle] = useState(false);
+
+    const openNewArticleModal = () => {
+        setAddNewArticle(true);
+    };
+
+    const closeNewArticleModal = () => {
+        setAddNewArticle(false);
+    };
 
     if (!allArticles) {
         return <LinearProgress />;
@@ -27,6 +38,10 @@ export default function DashboardHomePage() {
 
     return (
         <>
+            <AddSingleArticle
+                open={addNewArticle}
+                handleClose={closeNewArticleModal}
+            />
             <Typography variant="h1" sx={{ marginLeft: "0.5rem" }}>
                 Dashboard
             </Typography>
@@ -34,6 +49,7 @@ export default function DashboardHomePage() {
                 variant="extended"
                 color="primary"
                 aria-label="add"
+                onClick={openNewArticleModal}
                 sx={{ margin: "1rem 0" }}
             >
                 <AddIcon sx={{ mr: 1 }} />
@@ -49,7 +65,7 @@ export default function DashboardHomePage() {
                 <Stack spacing={2}>
                     {allArticles.map((article) => {
                         return (
-                            <Paper>
+                            <Paper key={article.title + article.author}>
                                 <ListItem alignItems="flex-start">
                                     <ListItemAvatar>
                                         <Avatar
