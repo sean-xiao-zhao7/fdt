@@ -46,8 +46,6 @@ export default function AddSingleArticle({ open, handleClose, handleSubmit }) {
                     fullWidth
                     variant="standard"
                 />
-            </DialogContent>
-            <DialogContent>
                 <TextField
                     label="Body"
                     multiline
@@ -56,6 +54,7 @@ export default function AddSingleArticle({ open, handleClose, handleSubmit }) {
                     id="body"
                     fullWidth
                     required
+                    sx={{ marginTop: "2rem" }}
                 />
             </DialogContent>
             <DialogActions>
