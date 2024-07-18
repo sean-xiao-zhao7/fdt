@@ -19,7 +19,9 @@ export const articlesSlice = createSlice({
     initialState,
     reducers: {
         // Use the PayloadAction type to declare the contents of `action.payload`
-        addSingleArticle: (state, action: PayloadAction<ArticleType>) => {},
+        addSingleArticle: (state, action: PayloadAction<ArticleType>) => {
+            state.articles.push(action.payload);
+        },
     },
 });
 

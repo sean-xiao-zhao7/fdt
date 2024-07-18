@@ -1,4 +1,4 @@
-import { useAppSelector } from "../../store/hooks";
+import { useAppSelector, useAppDispatch } from "../../store/hooks";
 import { useState } from "react";
 
 import { LinearProgress, Paper } from "@mui/material";
@@ -12,9 +12,12 @@ import Typography from "@mui/material/Typography";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import AddSingleArticle from "../dashboard/AddSingleArticle";
+import { addSingleArticle } from "../../store/slices/articlesSlice";
 
 export default function DashboardHomePage() {
     const allArticles = useAppSelector((state) => state.articles.articles);
+    const dispatch = useAppDispatch();
+
     const [addNewArticle, setAddNewArticle] = useState(false);
 
     const openNewArticleModal = () => {
@@ -34,6 +37,16 @@ export default function DashboardHomePage() {
         const body = formJson.body;
         const author = "Travis Howard";
         const dateAdded = Date.now().toLocaleString();
+        dispatch(
+            addSingleArticle({
+                title,
+                intro,
+                body,
+                author,
+                imageURL: "",
+                dateAdded,
+            })
+        );
         closeNewArticleModal();
     };
 
