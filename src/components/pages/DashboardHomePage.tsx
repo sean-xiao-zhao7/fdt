@@ -55,7 +55,6 @@ export default function DashboardHomePage() {
                 <AddIcon sx={{ mr: 1 }} />
                 New Article
             </Fab>
-
             <List
                 sx={{
                     width: "100%",

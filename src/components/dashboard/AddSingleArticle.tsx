@@ -5,12 +5,16 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+import Divider from "@mui/material/Divider";
 
 export default function AddSingleArticle({ open, handleClose }) {
     return (
         <Dialog
             open={open}
             onClose={handleClose}
+            maxWidth={"md"}
+            fullWidth={true}
+            scroll={"paper"}
             PaperProps={{
                 component: "form",
                 onSubmit: (event: React.FormEvent<HTMLFormElement>) => {
@@ -24,22 +28,43 @@ export default function AddSingleArticle({ open, handleClose }) {
                 },
             }}
         >
-            <DialogTitle>Subscribe</DialogTitle>
+            <DialogTitle>New Article</DialogTitle>
             <DialogContent>
                 <DialogContentText>
-                    To subscribe to this website, please enter your email
-                    address here. We will send updates occasionally.
+                    Please fill out the title, intro and body of the new
+                    article.
                 </DialogContentText>
                 <TextField
                     autoFocus
                     required
                     margin="dense"
-                    id="name"
-                    name="email"
-                    label="Email Address"
-                    type="email"
+                    id="title"
+                    name="title"
+                    label="Title"
+                    type="text"
                     fullWidth
                     variant="standard"
+                />
+                <TextField
+                    required
+                    margin="dense"
+                    id="intro"
+                    name="intro"
+                    label="Intro"
+                    type="text"
+                    fullWidth
+                    variant="standard"
+                />
+            </DialogContent>
+            <DialogContent>
+                <TextField
+                    label="Body"
+                    multiline
+                    rows={4}
+                    name="body"
+                    id="body"
+                    fullWidth
+                    required
                 />
             </DialogContent>
             <DialogActions>
