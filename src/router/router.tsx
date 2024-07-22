@@ -1,9 +1,13 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import HomePage from "../components/pages/HomePage";
 import MainLayout from "../components/layout/MainLayout";
-import DashboardHomePage from "../components/pages/DashboardHomePage";
-import DatatableHomePage from "../components/pages/DatatableHomePage";
+import HomePage from "../components/pages/HomePage";
+
+import TheologyPage from "../components/pages/TheologyPage";
+import SalvationPage from "../components/pages/SalvationPage";
+import RelationshipsPage from "../components/pages/RelationshipsPage";
+import OldTestamentPage from "../components/pages/OldTestamentPage";
+import EarlyChurchPage from "../components/pages/EarlyChurchPage";
 
 export const router = createBrowserRouter([
     {
@@ -12,11 +16,11 @@ export const router = createBrowserRouter([
         errorElement: <MainLayout />,
         children: [
             { element: <HomePage />, index: true },
-            { element: <DashboardHomePage />, path: "/theology" },
-            { element: <DatatableHomePage />, path: "/salvation" },
-            { element: <DatatableHomePage />, path: "/relationships" },
-            { element: <DatatableHomePage />, path: "/old-testament" },
-            { element: <DatatableHomePage />, path: "/early-church" },
+            { element: <TheologyPage />, path: "/theology" },
+            { element: <SalvationPage />, path: "/salvation" },
+            { element: <RelationshipsPage />, path: "/relationships" },
+            { element: <OldTestamentPage />, path: "/old-testament" },
+            { element: <EarlyChurchPage />, path: "/early-church" },
         ],
     },
 ]);

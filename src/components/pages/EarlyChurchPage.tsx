@@ -14,7 +14,7 @@ import AddIcon from "@mui/icons-material/Add";
 import AddSingleArticle from "../dashboard/AddSingleArticle";
 import { addSingleArticle } from "../../store/slices/articlesSlice";
 
-export default function DashboardHomePage() {
+export default function EarlyChurchPage() {
     const allArticles = useAppSelector((state) => state.articles.articles);
     const dispatch = useAppDispatch();
 
