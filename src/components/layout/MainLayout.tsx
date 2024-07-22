@@ -25,7 +25,7 @@ const MainLayout = function () {
                 <Grid container justifyContent={"center"} spacing={1}>
                     <Grid item>
                         <Button variant="contained" size="large">
-                            <Link to="/dashboard-home">Dashboard</Link>
+                            <Link to="/theology-home">Theology</Link>
                         </Button>
                     </Grid>
                     <Grid item>

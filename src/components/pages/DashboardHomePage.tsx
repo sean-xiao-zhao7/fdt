@@ -69,7 +69,7 @@ export default function DashboardHomePage() {
                 handleSubmit={submitNewArticle}
             />
             <Typography variant="h1" sx={{ marginLeft: "0.5rem" }}>
-                Dashboard
+                All Articles
             </Typography>
             <Fab
                 variant="extended"

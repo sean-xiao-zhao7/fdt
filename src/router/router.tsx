@@ -9,9 +9,10 @@ export const router = createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
+        errorElement: <MainLayout />,
         children: [
             { element: <HomePage />, index: true },
-            { element: <DashboardHomePage />, path: "/dashboard-home" },
+            { element: <DashboardHomePage />, path: "/theology-home" },
             { element: <DatatableHomePage />, path: "/datatable-home" },
         ],
     },
