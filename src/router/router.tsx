@@ -12,8 +12,11 @@ export const router = createBrowserRouter([
         errorElement: <MainLayout />,
         children: [
             { element: <HomePage />, index: true },
-            { element: <DashboardHomePage />, path: "/theology-home" },
-            { element: <DatatableHomePage />, path: "/datatable-home" },
+            { element: <DashboardHomePage />, path: "/theology" },
+            { element: <DatatableHomePage />, path: "/salvation" },
+            { element: <DatatableHomePage />, path: "/relationships" },
+            { element: <DatatableHomePage />, path: "/old-testament" },
+            { element: <DatatableHomePage />, path: "/early-church" },
         ],
     },
 ]);

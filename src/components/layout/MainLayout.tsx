@@ -25,12 +25,27 @@ const MainLayout = function () {
                 <Grid container justifyContent={"center"} spacing={1}>
                     <Grid item>
                         <Button variant="contained" size="large">
-                            <Link to="/theology-home">Theology</Link>
+                            <Link to="/theology">Theology</Link>
                         </Button>
                     </Grid>
                     <Grid item>
                         <Button variant="contained" size="large">
-                            <Link to="/datatable-home">Datatable</Link>
+                            <Link to="/salvation">Salvation</Link>
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <Button variant="contained" size="large">
+                            <Link to="/relationships">Relationships</Link>
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <Button variant="contained" size="large">
+                            <Link to="/old-testament">Old Testament</Link>
+                        </Button>
+                    </Grid>
+                    <Grid item>
+                        <Button variant="contained" size="large">
+                            <Link to="/early-church">Early Church</Link>
                         </Button>
                     </Grid>
                     <Grid item>
