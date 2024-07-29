@@ -11,7 +11,7 @@ import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { Container } from "@mui/material";
+import { Container, Divider, Typography } from "@mui/material";
 
 const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
@@ -22,6 +22,14 @@ const MainLayout = function () {
     return (
         <Container maxWidth="lg" sx={{ padding: "2% 0" }}>
             <Box>
+                <Typography
+                    variant="h1"
+                    component="h2"
+                    textAlign={"center"}
+                    marginBottom={"2rem"}
+                >
+                    Jamey's Blog
+                </Typography>
                 <Grid container justifyContent={"center"} spacing={1}>
                     <Grid item>
                         <Button variant="contained" size="large">
