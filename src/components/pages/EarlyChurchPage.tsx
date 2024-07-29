@@ -69,7 +69,7 @@ export default function EarlyChurchPage() {
                 handleSubmit={submitNewArticle}
             />
             <Typography variant="h1" sx={{ marginLeft: "0.5rem" }}>
-                All Articles
+                Early Churches
             </Typography>
             <Fab
                 variant="extended"

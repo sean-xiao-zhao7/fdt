@@ -14,7 +14,7 @@ import AddIcon from "@mui/icons-material/Add";
 import AddSingleArticle from "../dashboard/AddSingleArticle";
 import { addSingleArticle } from "../../store/slices/articlesSlice";
 
-export default function TheologyPage() {
+export default function FaithDoubtPage() {
     const allArticles = useAppSelector((state) => state.articles.articles);
     const dispatch = useAppDispatch();
 
@@ -69,7 +69,7 @@ export default function TheologyPage() {
                 handleSubmit={submitNewArticle}
             />
             <Typography variant="h1" sx={{ marginLeft: "0.5rem" }}>
-                All Articles
+                Faith & Doubt
             </Typography>
             <Fab
                 variant="extended"
@@ -100,17 +100,14 @@ export default function TheologyPage() {
                                     </ListItemAvatar>
                                     <ListItemText
                                         primary={article.title}
+                                        primaryTypographyProps={{
+                                            fontSize: "1.4rem",
+                                        }}
                                         secondary={
                                             <>
-                                                <Typography
-                                                    sx={{ display: "inline" }}
-                                                    component="span"
-                                                    variant="body2"
-                                                    color="text.primary"
-                                                >
+                                                <Typography color="text.primary">
                                                     {article.intro}
                                                 </Typography>
-                                                {article.body}
                                             </>
                                         }
                                     />

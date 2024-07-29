@@ -24,7 +24,7 @@ const MainLayout = function () {
             <Box>
                 <Typography
                     variant="h1"
-                    component="h2"
+                    component="h1"
                     textAlign={"center"}
                     marginBottom={"2rem"}
                 >
@@ -33,7 +33,7 @@ const MainLayout = function () {
                 <Grid container justifyContent={"center"} spacing={1}>
                     <Grid item>
                         <Button variant="contained" size="large">
-                            <Link to="/theology">Theology</Link>
+                            <Link to="/faith-doubt">Faith & Doubt</Link>
                         </Button>
                     </Grid>
                     <Grid item>
