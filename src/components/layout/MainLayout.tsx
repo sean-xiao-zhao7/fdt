@@ -32,29 +32,39 @@ const MainLayout = function () {
                 </Typography>
                 <Grid container justifyContent={"center"} spacing={1}>
                     <Grid item>
-                        <Button variant="contained" size="large">
-                            <Link to="/faith-doubt">Faith & Doubt</Link>
-                        </Button>
+                        <Link to="/faith-doubt">
+                            <Button variant="contained" size="large">
+                                Faith & Doubt
+                            </Button>
+                        </Link>
                     </Grid>
                     <Grid item>
-                        <Button variant="contained" size="large">
-                            <Link to="/salvation">Salvation</Link>
-                        </Button>
+                        <Link to="/salvation">
+                            <Button variant="contained" size="large">
+                                Salvation
+                            </Button>
+                        </Link>
                     </Grid>
                     <Grid item>
-                        <Button variant="contained" size="large">
-                            <Link to="/relationships">Relationships</Link>
-                        </Button>
+                        <Link to="/relationships">
+                            <Button variant="contained" size="large">
+                                Relationships
+                            </Button>
+                        </Link>
                     </Grid>
                     <Grid item>
-                        <Button variant="contained" size="large">
-                            <Link to="/old-testament">Old Testament</Link>
-                        </Button>
+                        <Link to="/old-testament">
+                            <Button variant="contained" size="large">
+                                Old Testament
+                            </Button>
+                        </Link>
                     </Grid>
                     <Grid item>
-                        <Button variant="contained" size="large">
-                            <Link to="/early-church">Early Church</Link>
-                        </Button>
+                        <Link to="/early-church">
+                            <Button variant="contained" size="large">
+                                Early Church
+                            </Button>
+                        </Link>
                     </Grid>
                     <Grid item>
                         <IconButton
