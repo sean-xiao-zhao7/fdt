@@ -14,7 +14,7 @@ import SingleArticleListItem from "../dashboard/SingleArticleItem";
 // import AddSingleArticle from "../dashboard/AddSingleArticle";
 // import { addSingleArticle } from "../../store/slices/articlesSlice";
 
-export default function BasePage({ title }) {
+export default function BasePage({ title, articleType }) {
     const allArticles = useAppSelector((state) => state.articles.articles);
 
     // const dispatch = useAppDispatch();
