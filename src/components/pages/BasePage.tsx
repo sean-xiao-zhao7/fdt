@@ -1,7 +1,7 @@
 import { useAppSelector, useAppDispatch } from "../../store/hooks";
 // import { useState } from "react";
 
-import { LinearProgress } from "@mui/material";
+import { LinearProgress, Paper } from "@mui/material";
 import List from "@mui/material/List";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
@@ -62,7 +62,7 @@ export default function BasePage({ title, articleType }) {
     }
 
     return (
-        <>
+        <Paper elevation={2} square sx={{ padding: "2rem" }}>
             {/* <AddSingleArticle
                 open={addNewArticle}
                 handleClose={closeNewArticleModal}
@@ -93,6 +93,6 @@ export default function BasePage({ title, articleType }) {
                     })}
                 </Stack>
             </List>
-        </>
+        </Paper>
     );
 }

@@ -13,7 +13,11 @@ export default function SingleArticleListItem({
     article: ArticleType;
 }) {
     return (
-        <Paper key={article.title + article.author}>
+        <Paper
+            key={article.title + article.author}
+            variant="outlined"
+            sx={{ backgroundColor: "#f9f9f9" }}
+        >
             <ListItem alignItems="flex-start">
                 <ListItemAvatar>
                     <Avatar alt={article.author} src={article.imageURL} />
