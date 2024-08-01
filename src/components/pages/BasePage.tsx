@@ -1,51 +1,54 @@
 import { useAppSelector, useAppDispatch } from "../../store/hooks";
-import { useState } from "react";
+// import { useState } from "react";
 
 import { LinearProgress } from "@mui/material";
 import List from "@mui/material/List";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import Fab from "@mui/material/Fab";
-import AddIcon from "@mui/icons-material/Add";
-import AddSingleArticle from "../dashboard/AddSingleArticle";
-import { addSingleArticle } from "../../store/slices/articlesSlice";
+// import Fab from "@mui/material/Fab";
+// import AddIcon from "@mui/icons-material/Add";
+
+// custom components
 import SingleArticleListItem from "../dashboard/SingleArticleItem";
 
-export default function SalvationPage() {
+// import AddSingleArticle from "../dashboard/AddSingleArticle";
+// import { addSingleArticle } from "../../store/slices/articlesSlice";
+
+export default function BasePage({ title }) {
     const allArticles = useAppSelector((state) => state.articles.articles);
-    const dispatch = useAppDispatch();
 
-    const [addNewArticle, setAddNewArticle] = useState(false);
+    // const dispatch = useAppDispatch();
+    // const [addNewArticle, setAddNewArticle] = useState(false);
 
-    const openNewArticleModal = () => {
-        setAddNewArticle(true);
-    };
+    // const openNewArticleModal = () => {
+    //     setAddNewArticle(true);
+    // };
 
-    const closeNewArticleModal = () => {
-        setAddNewArticle(false);
-    };
+    // const closeNewArticleModal = () => {
+    //     setAddNewArticle(false);
+    // };
 
-    const submitNewArticle = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-        const formJson = Object.fromEntries((formData as any).entries());
-        const title = formJson.title;
-        const intro = formJson.intro;
-        const body = formJson.body;
-        const author = "Travis Howard";
-        const dateAdded = Date.now().toLocaleString();
-        dispatch(
-            addSingleArticle({
-                title,
-                intro,
-                body,
-                author,
-                imageURL: "",
-                dateAdded,
-            })
-        );
-        closeNewArticleModal();
-    };
+    // const submitNewArticle = (event: React.FormEvent<HTMLFormElement>) => {
+    //     event.preventDefault();
+    //     const formData = new FormData(event.currentTarget);
+    //     const formJson = Object.fromEntries((formData as any).entries());
+    //     const title = formJson.title;
+    //     const intro = formJson.intro;
+    //     const body = formJson.body;
+    //     const author = "Travis Howard";
+    //     const dateAdded = Date.now().toLocaleString();
+    //     dispatch(
+    //         addSingleArticle({
+    //             title,
+    //             intro,
+    //             body,
+    //             author,
+    //             imageURL: "",
+    //             dateAdded,
+    //         })
+    //     );
+    //     closeNewArticleModal();
+    // };
 
     if (!allArticles) {
         return <LinearProgress />;
@@ -60,15 +63,15 @@ export default function SalvationPage() {
 
     return (
         <>
-            <AddSingleArticle
+            {/* <AddSingleArticle
                 open={addNewArticle}
                 handleClose={closeNewArticleModal}
                 handleSubmit={submitNewArticle}
-            />
+            /> */}
             <Typography variant="h1" sx={{ marginLeft: "0.5rem" }}>
-                All Articles
+                {title}
             </Typography>
-            <Fab
+            {/* <Fab
                 variant="extended"
                 color="primary"
                 aria-label="add"
@@ -77,7 +80,7 @@ export default function SalvationPage() {
             >
                 <AddIcon sx={{ mr: 1 }} />
                 New Article
-            </Fab>
+            </Fab> */}
             <List
                 sx={{
                     width: "100%",
