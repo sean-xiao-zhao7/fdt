@@ -1,17 +1,16 @@
 import { useAppSelector, useAppDispatch } from "../../store/hooks";
 import { useState } from "react";
 
-import { LinearProgress, Paper } from "@mui/material";
+import { LinearProgress } from "@mui/material";
 import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
 import Stack from "@mui/material/Stack";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
 import Typography from "@mui/material/Typography";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
+
+// custom components
 import AddSingleArticle from "../dashboard/AddSingleArticle";
+import SingleArticleListItem from "../dashboard/SingleArticleItem";
 import { addSingleArticle } from "../../store/slices/articlesSlice";
 
 export default function FaithDoubtPage() {
@@ -89,31 +88,7 @@ export default function FaithDoubtPage() {
             >
                 <Stack spacing={2}>
                     {allArticles.map((article) => {
-                        return (
-                            <Paper key={article.title + article.author}>
-                                <ListItem alignItems="flex-start">
-                                    <ListItemAvatar>
-                                        <Avatar
-                                            alt={article.author}
-                                            src={article.imageURL}
-                                        />
-                                    </ListItemAvatar>
-                                    <ListItemText
-                                        primary={article.title}
-                                        primaryTypographyProps={{
-                                            fontSize: "1.4rem",
-                                        }}
-                                        secondary={
-                                            <>
-                                                <Typography color="text.primary">
-                                                    {article.intro}
-                                                </Typography>
-                                            </>
-                                        }
-                                    />
-                                </ListItem>
-                            </Paper>
-                        );
+                        return <SingleArticleListItem article={article} />;
                     })}
                 </Stack>
             </List>
