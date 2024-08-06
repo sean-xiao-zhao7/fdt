@@ -8,6 +8,7 @@ import SalvationPage from "../components/pages/SalvationPage";
 import RelationshipsPage from "../components/pages/RelationshipsPage";
 import OldTestamentPage from "../components/pages/OldTestamentPage";
 import EarlyChurchPage from "../components/pages/EarlyChurchPage";
+import AddArticlePage from "../components/pages/AddArticlePage";
 
 export const router = createBrowserRouter([
     {
@@ -21,6 +22,7 @@ export const router = createBrowserRouter([
             { element: <RelationshipsPage />, path: "/relationships" },
             { element: <OldTestamentPage />, path: "/old-testament" },
             { element: <EarlyChurchPage />, path: "/early-church" },
+            { element: <AddArticlePage />, path: "/add-article" },
         ],
     },
 ]);
