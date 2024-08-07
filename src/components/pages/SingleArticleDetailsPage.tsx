@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useAppSelector } from "../../store/hooks";
-import { Paper, Typography } from "@mui/material";
+import { Divider, Paper, Typography } from "@mui/material";
 
 export default function SingleArticleDetailsPage() {
     const { id } = useParams();
@@ -11,6 +11,7 @@ export default function SingleArticleDetailsPage() {
     return (
         <Paper sx={{ padding: "2rem" }} elevation={2}>
             <Typography variant="h2">{currentArticle.title}</Typography>
+            <Divider component="div" sx={{ margin: "1rem 0" }} />
             <Typography variant="body1">{currentArticle.body}</Typography>
         </Paper>
     );
