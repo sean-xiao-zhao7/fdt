@@ -23,8 +23,8 @@ export default function BasePage({ title, articleType }) {
     }
 
     return (
-        <Paper elevation={2} square sx={{ padding: "2rem" }}>
-            <Typography variant="h1" sx={{ marginLeft: "0.5rem" }}>
+        <>
+            <Typography variant="h1" sx={{ margin: "0.5rem" }}>
                 {title}
             </Typography>
             <List
@@ -39,6 +39,6 @@ export default function BasePage({ title, articleType }) {
                     })}
                 </Stack>
             </List>
-        </Paper>
+        </>
     );
 }

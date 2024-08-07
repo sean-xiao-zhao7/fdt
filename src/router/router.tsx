@@ -9,6 +9,7 @@ import RelationshipsPage from "../components/pages/RelationshipsPage";
 import OldTestamentPage from "../components/pages/OldTestamentPage";
 import EarlyChurchPage from "../components/pages/EarlyChurchPage";
 import AddArticlePage from "../components/pages/AddArticlePage";
+import SingleArticleDetailsPage from "../components/pages/SingleArticleDetailsPage";
 
 export const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
             { element: <OldTestamentPage />, path: "/old-testament" },
             { element: <EarlyChurchPage />, path: "/early-church" },
             { element: <AddArticlePage />, path: "/add-article" },
+            {
+                path: "/article",
+                element: <SingleArticleDetailsPage />,
+            },
         ],
     },
 ]);
