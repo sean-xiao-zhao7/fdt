@@ -1,4 +1,4 @@
-import { Paper } from "@mui/material";
+import { Paper, colors } from "@mui/material";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
@@ -28,13 +28,14 @@ export default function SingleArticleListItem({
                         primary={article.title}
                         primaryTypographyProps={{
                             fontSize: "1.4rem",
+                            color: "black",
                         }}
                         secondary={
                             <>
                                 <Typography
-                                    color="text.primary"
                                     variant="subtitle1"
                                     component="span"
+                                    color={"black"}
                                 >
                                     {article.intro}
                                 </Typography>

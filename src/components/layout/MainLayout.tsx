@@ -116,7 +116,6 @@ export default function ToggleColorMode() {
                 typography: {
                     h1: {
                         fontSize: "1.8rem",
-                        // textAlign: "center",
                     },
                     h2: {
                         fontSize: "1.4rem",
