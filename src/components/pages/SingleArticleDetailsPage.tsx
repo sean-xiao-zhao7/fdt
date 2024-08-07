@@ -1,3 +1,7 @@
+import { useParams } from "react-router-dom";
+
 export default function SingleArticleDetailsPage() {
-    return <></>;
+    let { id } = useParams();
+
+    return <>Single item page for {id}</>;
 }
