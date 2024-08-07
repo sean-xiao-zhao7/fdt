@@ -1,7 +1,11 @@
 import { useParams } from "react-router-dom";
+import { useAppSelector } from "../../store/hooks";
 
 export default function SingleArticleDetailsPage() {
-    let { id } = useParams();
+    const { id } = useParams();
+    const currentArticle = useAppSelector((state) =>
+        state.articles.articles.find((article) => id === article.id)
+    );
 
-    return <>Single item page for {id}</>;
+    return <>Single item page for {currentArticle.title}</>;
 }
