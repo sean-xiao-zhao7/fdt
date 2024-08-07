@@ -25,7 +25,7 @@ export const router = createBrowserRouter([
             { element: <EarlyChurchPage />, path: "/early-church" },
             { element: <AddArticlePage />, path: "/add-article" },
             {
-                path: "/article",
+                path: "/article/:id",
                 element: <SingleArticleDetailsPage />,
             },
         ],

@@ -31,7 +31,11 @@ export default function SingleArticleListItem({
                         }}
                         secondary={
                             <>
-                                <Typography color="text.primary">
+                                <Typography
+                                    color="text.primary"
+                                    variant="subtitle1"
+                                    component="span"
+                                >
                                     {article.intro}
                                 </Typography>
                             </>

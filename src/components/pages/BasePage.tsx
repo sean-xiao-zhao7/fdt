@@ -35,7 +35,12 @@ export default function BasePage({ title, articleType }) {
             >
                 <Stack spacing={2}>
                     {allArticles.map((article) => {
-                        return <SingleArticleListItem article={article} />;
+                        return (
+                            <SingleArticleListItem
+                                article={article}
+                                key={article.id}
+                            />
+                        );
                     })}
                 </Stack>
             </List>
