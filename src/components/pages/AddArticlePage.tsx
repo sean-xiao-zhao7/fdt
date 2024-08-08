@@ -28,8 +28,10 @@ export default function AddArticlePage() {
         const title = formJson.title;
         const intro = formJson.intro;
         const body = formJson.body;
-        const author = "Travis Howard";
+        const author = "Jamey Baird";
+        const type = formJson.type;
         const dateAdded = Date.now().toLocaleString();
+
         dispatch(
             addSingleArticle({
                 id: Date.now().toLocaleString(),
@@ -39,6 +41,7 @@ export default function AddArticlePage() {
                 author,
                 imageURL: "",
                 dateAdded,
+                type,
             })
         );
         closeNewArticleModal();

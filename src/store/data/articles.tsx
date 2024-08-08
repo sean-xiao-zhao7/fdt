@@ -7,6 +7,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Ali Connors",
         imageURL: "/static/images/avatar/1.jpg",
         dateAdded: Date.now().toLocaleString(),
+        type: "faith-doubt",
     },
     {
         id: "art1",
@@ -16,6 +17,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Travis Howard",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
+        type: "salvation",
     },
     {
         id: "art2",
@@ -25,6 +27,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Travis Howard",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
+        type: "relationships",
     },
 ];
 
@@ -36,4 +39,5 @@ export type ArticleType = {
     author: string;
     imageURL: string;
     dateAdded: string;
+    type: string;
 };
