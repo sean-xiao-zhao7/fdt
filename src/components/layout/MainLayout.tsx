@@ -127,6 +127,14 @@ export default function ToggleColorMode() {
             createTheme({
                 palette: {
                     mode,
+                    primary: {
+                        main: "#1c57b4",
+                        contrastText: "#fff",
+                    },
+                    secondary: {
+                        main: "rgb(4, 0, 87)",
+                        contrastText: "#fff",
+                    },
                 },
                 components: {
                     MuiButtonBase: {
@@ -135,12 +143,12 @@ export default function ToggleColorMode() {
                         },
                     },
                 },
+
                 typography: {
                     fontFamily: "'Poppins', sans-serif;",
                     h1: {
                         fontSize: "2.4rem",
                         fontFamily: "'Bebas Neue', sans-serif",
-                        color: "rgb(4, 0, 87);",
                     },
                     h2: {
                         fontSize: "1.6rem",
