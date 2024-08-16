@@ -135,9 +135,6 @@ export default function ToggleColorMode() {
                         main: "#040057",
                         contrastText: "#fff",
                     },
-                    text: {
-                        primary: mode === "light" ? "#040057" : "#fff",
-                    },
                 },
                 components: {
                     MuiButtonBase: {
@@ -152,11 +149,17 @@ export default function ToggleColorMode() {
                     h1: {
                         fontSize: "2.4rem",
                         fontFamily: "'Bebas Neue', sans-serif",
+                        color: mode === "light" ? "#040057" : "#fff",
                     },
                     h2: {
+                        fontSize: "2rem",
+                        fontFamily: "'Bebas Neue', sans-serif",
+                        color: mode === "light" ? "#040057" : "#fff",
+                    },
+                    h3: {
                         fontSize: "1.6rem",
-                        fontWeight: "400",
-                        textAlign: "center",
+                        fontFamily: "'Bebas Neue', sans-serif",
+                        color: mode === "light" ? "#1c57b4" : "#fff",
                     },
                     body1: {
                         fontSize: "1.1rem",

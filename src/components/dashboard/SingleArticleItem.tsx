@@ -26,7 +26,7 @@ export default function SingleArticleListItem({
                     <ListItemText
                         primary={article.title}
                         primaryTypographyProps={{
-                            fontSize: "1.4rem",
+                            variant: "h3",
                         }}
                         secondary={
                             <>

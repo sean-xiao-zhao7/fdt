@@ -16,7 +16,7 @@ export default function BasePage({ title, articleType }) {
     } else if (allArticles.length <= 0) {
         return (
             <>
-                <Typography variant="h1">Dashboard</Typography>
+                <Typography variant="h2">Dashboard</Typography>
                 <Typography>No articles.</Typography>
             </>
         );
@@ -24,7 +24,7 @@ export default function BasePage({ title, articleType }) {
 
     return (
         <>
-            <Typography variant="h1" sx={{ margin: "0.5rem" }}>
+            <Typography variant="h2" sx={{ margin: "0.5rem" }}>
                 {title}
             </Typography>
             <List
