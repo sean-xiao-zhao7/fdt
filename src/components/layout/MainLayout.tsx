@@ -28,7 +28,7 @@ const MainLayout = function () {
                     textAlign={"center"}
                     marginBottom={"2rem"}
                 >
-                    Jamey's Blog
+                    <Link to="/">Jamey's Blog</Link>
                 </Typography>
                 <Grid container justifyContent={"center"} spacing={1}>
                     <Grid item>
