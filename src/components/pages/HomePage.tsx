@@ -8,10 +8,11 @@ export default function HomePage() {
             square
             sx={{ padding: "2rem", textAlign: "center" }}
         >
-            <Typography variant="h1">Welcome to Jamey's blog.</Typography>
+            <Typography variant="h1">Welcome!</Typography>
             <Divider sx={{ margin: "1rem 0" }} />
             <Typography variant="body1">
-                Welcome to Jamey's Christian applications blog.
+                This is Jamey's Christian Hermeneutic blog. Any question is
+                welcome.
             </Typography>
             <Typography variant="body1">
                 Select topic you like from the top.

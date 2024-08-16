@@ -22,7 +22,10 @@ export default function SingleArticleListItem({
             >
                 <ListItem alignItems="flex-start">
                     <ListItemAvatar>
-                        <Avatar alt={article.author} src={article.imageURL} />
+                        <Avatar
+                            alt={article.type.toUpperCase()}
+                            src={article.imageURL}
+                        />
                     </ListItemAvatar>
                     <ListItemText
                         primary={article.title}

@@ -27,7 +27,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "relationships",
+        type: "old-testament",
     },
     {
         id: "art3",
@@ -37,7 +37,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "relationships",
+        type: "early-church",
     },
     {
         id: "art4",
@@ -47,7 +47,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "relationships",
+        type: "early-church",
     },
     {
         id: "art5",
@@ -67,7 +67,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "relationships",
+        type: "salvation",
     },
     {
         id: "art7",
@@ -87,7 +87,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "relationships",
+        type: "faith-doubt",
     },
     {
         id: "art9",

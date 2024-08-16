@@ -28,7 +28,7 @@ const MainLayout = function () {
                     textAlign={"center"}
                     marginBottom={"2rem"}
                 >
-                    <Link to="/">Jamey's Blog</Link>
+                    <Link to="/">Hermeneutic Questions & Answers by Jamey</Link>
                 </Typography>
                 <Grid container justifyContent={"center"} spacing={1}>
                     <Grid item>
@@ -116,9 +116,11 @@ export default function ToggleColorMode() {
                 typography: {
                     h1: {
                         fontSize: "1.8rem",
+                        fontWeight: "400",
                     },
                     h2: {
-                        fontSize: "1.4rem",
+                        fontSize: "1.6rem",
+                        fontWeight: "400",
                         textAlign: "center",
                     },
                     body1: {
