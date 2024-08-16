@@ -9,7 +9,7 @@ export default function SingleArticleDetailsPage() {
     );
 
     return (
-        <Paper sx={{ padding: "2rem" }} elevation={2}>
+        <Paper sx={{ padding: "2rem 4rem" }} elevation={2}>
             <Typography variant="h2">{currentArticle.title}</Typography>
             <Divider component="div" sx={{ margin: "1rem 0" }} />
             <Typography variant="body1">{currentArticle.intro}</Typography>

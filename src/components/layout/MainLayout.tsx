@@ -20,70 +20,82 @@ const MainLayout = function () {
     const colorMode = useContext(ColorModeContext);
 
     return (
-        <Container maxWidth="lg" sx={{ padding: "2% 0" }}>
-            <Box>
-                <Typography
-                    variant="h1"
-                    component="h1"
-                    textAlign={"center"}
-                    marginBottom={"2rem"}
-                >
-                    <Link to="/">Hermeneutic Questions & Answers by Jamey</Link>
-                </Typography>
-                <Grid container justifyContent={"center"} spacing={1}>
-                    <Grid item>
-                        <Link to="/faith-doubt">
-                            <Button variant="contained" size="large">
-                                Faith & Doubt
-                            </Button>
+        <>
+            <Box
+                sx={{
+                    height: "1rem",
+                    background:
+                        "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,127,153,1) 100%);",
+                    marginBottom: "2rem",
+                }}
+            ></Box>
+            <Container maxWidth="lg">
+                <Box>
+                    <Typography
+                        variant="h1"
+                        component="h1"
+                        textAlign={"center"}
+                        marginBottom={"2rem"}
+                    >
+                        <Link to="/">
+                            Hermeneutic Questions & Answers by Jamey
                         </Link>
+                    </Typography>
+                    <Grid container justifyContent={"center"} spacing={1}>
+                        <Grid item>
+                            <Link to="/faith-doubt">
+                                <Button variant="contained" size="large">
+                                    Faith & Doubt
+                                </Button>
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link to="/salvation">
+                                <Button variant="contained" size="large">
+                                    Salvation
+                                </Button>
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link to="/relationships">
+                                <Button variant="contained" size="large">
+                                    Relationships
+                                </Button>
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link to="/old-testament">
+                                <Button variant="contained" size="large">
+                                    Old Testament
+                                </Button>
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link to="/early-church">
+                                <Button variant="contained" size="large">
+                                    Early Church
+                                </Button>
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <IconButton
+                                onClick={colorMode.toggleColorMode}
+                                color="inherit"
+                            >
+                                {theme.palette.mode === "dark" ? (
+                                    <Brightness7Icon />
+                                ) : (
+                                    <Brightness4Icon />
+                                )}
+                            </IconButton>
+                        </Grid>
                     </Grid>
-                    <Grid item>
-                        <Link to="/salvation">
-                            <Button variant="contained" size="large">
-                                Salvation
-                            </Button>
-                        </Link>
-                    </Grid>
-                    <Grid item>
-                        <Link to="/relationships">
-                            <Button variant="contained" size="large">
-                                Relationships
-                            </Button>
-                        </Link>
-                    </Grid>
-                    <Grid item>
-                        <Link to="/old-testament">
-                            <Button variant="contained" size="large">
-                                Old Testament
-                            </Button>
-                        </Link>
-                    </Grid>
-                    <Grid item>
-                        <Link to="/early-church">
-                            <Button variant="contained" size="large">
-                                Early Church
-                            </Button>
-                        </Link>
-                    </Grid>
-                    <Grid item>
-                        <IconButton
-                            onClick={colorMode.toggleColorMode}
-                            color="inherit"
-                        >
-                            {theme.palette.mode === "dark" ? (
-                                <Brightness7Icon />
-                            ) : (
-                                <Brightness4Icon />
-                            )}
-                        </IconButton>
-                    </Grid>
-                </Grid>
-                <Box sx={{ padding: "1rem 0" }}>
-                    <Outlet />
+                    <Box sx={{ padding: "1rem 0" }}>
+                        <Outlet />
+                    </Box>
                 </Box>
-            </Box>
-        </Container>
+            </Container>
+        </>
     );
 };
 

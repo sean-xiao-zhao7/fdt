@@ -33,7 +33,7 @@ export default function BasePage({ title, articleType }) {
                     bgcolor: "background.paper",
                 }}
             >
-                <Stack spacing={2}>
+                <Stack spacing={3}>
                     {allArticles.map((article) => {
                         return (
                             <SingleArticleListItem
