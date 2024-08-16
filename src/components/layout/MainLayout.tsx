@@ -121,6 +121,10 @@ export default function ToggleColorMode() {
                         fontSize: "1.4rem",
                         textAlign: "center",
                     },
+                    body1: {
+                        fontSize: "1.1rem",
+                        fontWeight: "400",
+                    },
                 },
             }),
         [mode]
