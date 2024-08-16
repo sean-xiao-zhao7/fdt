@@ -95,6 +95,16 @@ const MainLayout = function () {
                     </Box>
                 </Box>
             </Container>
+            <Box
+                sx={{
+                    height: "2rem",
+                    background:
+                        "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,127,153,1) 100%);",
+                    marginTop: "2rem",
+                }}
+            >
+                {/* <Typography variant="h2">Contact Jamey any time.</Typography> */}
+            </Box>
         </>
     );
 };
