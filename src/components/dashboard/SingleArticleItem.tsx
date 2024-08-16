@@ -1,4 +1,4 @@
-import { Paper, colors } from "@mui/material";
+import { Paper } from "@mui/material";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";

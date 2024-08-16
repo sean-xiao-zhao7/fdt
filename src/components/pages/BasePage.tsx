@@ -1,6 +1,6 @@
 import { useAppSelector } from "../../store/hooks";
 
-import { LinearProgress, Paper } from "@mui/material";
+import { LinearProgress } from "@mui/material";
 import List from "@mui/material/List";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";

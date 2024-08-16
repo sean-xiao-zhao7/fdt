@@ -136,9 +136,11 @@ export default function ToggleColorMode() {
                     },
                 },
                 typography: {
+                    fontFamily: "'Poppins', sans-serif;",
                     h1: {
-                        fontSize: "1.8rem",
-                        fontWeight: "400",
+                        fontSize: "2.4rem",
+                        fontFamily: "'Bebas Neue', sans-serif",
+                        color: "rgb(4, 0, 87);",
                     },
                     h2: {
                         fontSize: "1.6rem",
