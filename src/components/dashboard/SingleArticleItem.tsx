@@ -15,11 +15,7 @@ export default function SingleArticleListItem({
 }) {
     return (
         <Link to={`/article/${article.id}`}>
-            <Paper
-                key={article.title + article.author}
-                variant="outlined"
-                sx={{ backgroundColor: "#f9f9f9" }}
-            >
+            <Paper key={article.title + article.author} variant="outlined">
                 <ListItem alignItems="flex-start">
                     <ListItemAvatar>
                         <Avatar
@@ -31,14 +27,12 @@ export default function SingleArticleListItem({
                         primary={article.title}
                         primaryTypographyProps={{
                             fontSize: "1.4rem",
-                            color: "black",
                         }}
                         secondary={
                             <>
                                 <Typography
                                     variant="subtitle1"
                                     component="span"
-                                    color={"black"}
                                 >
                                     {article.intro}
                                 </Typography>

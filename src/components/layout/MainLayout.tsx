@@ -132,8 +132,11 @@ export default function ToggleColorMode() {
                         contrastText: "#fff",
                     },
                     secondary: {
-                        main: "rgb(4, 0, 87)",
+                        main: "#040057",
                         contrastText: "#fff",
+                    },
+                    text: {
+                        primary: mode === "light" ? "#040057" : "#fff",
                     },
                 },
                 components: {
