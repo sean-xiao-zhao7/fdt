@@ -5,7 +5,6 @@ import List from "@mui/material/List";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
-// custom components
 import SingleArticleListItem from "../dashboard/SingleArticleItem";
 
 export default function BasePage({ title, articleType }) {
