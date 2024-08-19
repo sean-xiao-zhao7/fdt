@@ -10,7 +10,12 @@ export default function SingleArticleDetailsPage() {
 
     return (
         <Paper sx={{ padding: "2rem 4rem" }} elevation={2}>
-            <Typography variant="h2">{currentArticle.title}</Typography>
+            <Typography
+                variant="h2"
+                sx={{ color: "#1c57b4", textAlign: "center" }}
+            >
+                {currentArticle.title}
+            </Typography>
             <Divider component="div" sx={{ margin: "1rem 0" }} />
             <Typography variant="body1">{currentArticle.intro}</Typography>
             {currentArticle.body.map((paragraph, index) => {

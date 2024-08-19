@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { Provider } from "react-redux";
 
+import "@fontsource/poppins/300.css";
 import "@fontsource/poppins/400.css";
 import "@fontsource/poppins/500.css";
 import "@fontsource/bebas-neue";

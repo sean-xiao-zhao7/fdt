@@ -149,12 +149,12 @@ export default function ToggleColorMode() {
                     h1: {
                         fontSize: "2.4rem",
                         fontFamily: "'Bebas Neue', sans-serif",
-                        color: mode === "light" ? "#040057" : "#fff",
+                        color: mode === "light" ? "#060087" : "#fff",
                     },
                     h2: {
                         fontSize: "2rem",
                         fontFamily: "'Bebas Neue', sans-serif",
-                        color: mode === "light" ? "#040057" : "#fff",
+                        color: mode === "light" ? "#060087" : "#fff",
                     },
                     h3: {
                         fontSize: "1.6rem",
@@ -163,6 +163,10 @@ export default function ToggleColorMode() {
                     },
                     body1: {
                         fontSize: "1.1rem",
+                        fontWeight: "400",
+                    },
+                    subtitle1: {
+                        color: mode === "light" ? "#4e4e4e" : "#fff",
                         fontWeight: "400",
                     },
                 },
