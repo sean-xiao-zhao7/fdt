@@ -38,7 +38,7 @@ const MainLayout = function () {
                         marginBottom={"2rem"}
                     >
                         <Link to="/">
-                            Hermeneutic Questions & Answers by Jamey
+                            Hermeneutic Questions & Answers by Pastor Jamey
                         </Link>
                     </Typography>
                     <Grid container justifyContent={"center"} spacing={1}>

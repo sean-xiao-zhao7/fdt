@@ -18,15 +18,15 @@ export default function HomePage() {
         >
             <Typography variant="h1">Welcome!</Typography>
             <Divider sx={{ margin: "1.5rem 0" }} />
-            <Typography variant="body1">
-                This is Jamey's Christian Hermeneutic blog. Any question is
-                welcome.
-            </Typography>
-            <Typography variant="body1">
+            <Typography variant="body1" sx={{ mb: 2 }}>
+                This is pastor Jamey's Christian Hermeneutic blog. Any question
+                is welcome.
+                <br />
                 Select topic you like from the top, or browse all articles
                 below.
+                <br />
+                Click on a preview to see the full text.
             </Typography>
-            <Divider sx={{ margin: "1.5rem 0" }} />
             <List
                 sx={{
                     width: "100%",
