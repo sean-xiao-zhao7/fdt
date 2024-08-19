@@ -17,7 +17,7 @@ export default function HomePage() {
             sx={{ padding: "2rem", textAlign: "center" }}
         >
             <Typography variant="h1">Welcome!</Typography>
-            <Divider sx={{ margin: "2rem 0" }} />
+            <Divider sx={{ margin: "1.5rem 0" }} />
             <Typography variant="body1">
                 This is Jamey's Christian Hermeneutic blog. Any question is
                 welcome.
@@ -26,7 +26,7 @@ export default function HomePage() {
                 Select topic you like from the top, or browse all articles
                 below.
             </Typography>
-            <Divider sx={{ margin: "2rem 0" }} />
+            <Divider sx={{ margin: "1.5rem 0" }} />
             <List
                 sx={{
                     width: "100%",

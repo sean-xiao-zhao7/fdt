@@ -8,14 +8,18 @@ import Typography from "@mui/material/Typography";
 import SingleArticleListItem from "../dashboard/SingleArticleItem";
 
 export default function BasePage({ title, articleType }) {
-    const allArticles = useAppSelector((state) => state.articles.articles);
+    const allArticles = useAppSelector((state) =>
+        state.articles.articles.filter(
+            (article) => article.type === articleType
+        )
+    );
 
     if (!allArticles) {
         return <LinearProgress />;
     } else if (allArticles.length <= 0) {
         return (
             <>
-                <Typography variant="h2">Dashboard</Typography>
+                <Typography variant="h2">{title}</Typography>
                 <Typography>No articles.</Typography>
             </>
         );
