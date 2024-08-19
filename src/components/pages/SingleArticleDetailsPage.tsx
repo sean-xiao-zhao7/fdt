@@ -13,8 +13,14 @@ export default function SingleArticleDetailsPage() {
             <Typography variant="h2">{currentArticle.title}</Typography>
             <Divider component="div" sx={{ margin: "1rem 0" }} />
             <Typography variant="body1">{currentArticle.intro}</Typography>
-            <br />
-            <Typography variant="body1">{currentArticle.body}</Typography>
+            {currentArticle.body.map((paragraph, index) => {
+                return (
+                    <div key={index}>
+                        <br />
+                        <Typography variant="body1">{paragraph}</Typography>
+                    </div>
+                );
+            })}
         </Paper>
     );
 }
