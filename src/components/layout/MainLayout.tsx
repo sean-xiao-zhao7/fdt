@@ -43,16 +43,9 @@ const MainLayout = function () {
                     </Typography>
                     <Grid container justifyContent={"center"} spacing={1}>
                         <Grid item>
-                            <Link to="/faith-doubt">
+                            <Link to="/lifestyle">
                                 <Button variant="contained" size="large">
-                                    Faith & Doubt
-                                </Button>
-                            </Link>
-                        </Grid>
-                        <Grid item>
-                            <Link to="/salvation">
-                                <Button variant="contained" size="large">
-                                    Salvation
+                                    Lifestyle
                                 </Button>
                             </Link>
                         </Grid>
@@ -64,16 +57,30 @@ const MainLayout = function () {
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link to="/old-testament">
+                            <Link to="/jesus">
                                 <Button variant="contained" size="large">
-                                    Old Testament
+                                    Jesus
                                 </Button>
                             </Link>
                         </Grid>
                         <Grid item>
-                            <Link to="/early-church">
+                            <Link to="/salvation">
                                 <Button variant="contained" size="large">
-                                    Early Church
+                                    Salvation
+                                </Button>
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link to="/christianity">
+                                <Button variant="contained" size="large">
+                                    Christianity
+                                </Button>
+                            </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link to="/old-testament">
+                                <Button variant="contained" size="large">
+                                    Old Testament
                                 </Button>
                             </Link>
                         </Grid>

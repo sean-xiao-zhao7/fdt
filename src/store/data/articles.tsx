@@ -11,7 +11,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/1.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "faith-doubt",
+        type: "lifestyle",
     },
     {
         id: "art1",
@@ -29,7 +29,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "salvation",
+        type: "lifestyle",
     },
     {
         id: "art2",
@@ -55,7 +55,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "old-testament",
+        type: "jesus",
     },
     {
         id: "art3",
@@ -89,7 +89,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "early-church",
+        type: "trinity",
     },
     {
         id: "art4",
@@ -117,7 +117,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "early-church",
+        type: "lifestyle",
     },
     {
         id: "art5",
@@ -141,7 +141,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "salvation",
+        type: "lifestyle",
     },
     {
         id: "art7",
@@ -153,19 +153,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "relationships",
-    },
-    {
-        id: "art8",
-        title: "What does the Bible teach about the Trinity?",
-        intro: "The most difficult thing about the Christian concept of the Trinity is that there is no way to perfectly and completely understand it. The Trinity is a concept that is impossible for any human being to fully understand, let alone explain. God is infinitely greater than we are; therefore, we should not expect to be able to fully understand Him. The Bible teaches that the Father is God, that Jesus is God, and that the Holy Spirit is God. The Bible also teaches that there is only one God. Though we can understand some facts about the relationship of the different Persons of the Trinity to one another, ultimately, it is incomprehensible to the human mind. However, this does not mean the Trinity is not true or that it is not based on the teachings of the Bible.",
-        body: [
-            "The doctrine of the Trinity has been a divisive issue throughout the entire history of the Christian church. While the core aspects of the Trinity are clearly presented in God’s Word, some of the side issues are not as explicitly clear. The Father is God, the Son is God, and the Holy Spirit is God—but there is only one God. That is the biblical doctrine of the Trinity. Beyond that, the issues are, to a certain extent, debatable and non-essential. Rather than attempting to fully define the Trinity with our finite human minds, we would be better served by focusing on God’s greatness and His infinitely higher nature. “Oh, the depth of the riches of the wisdom and knowledge of God! How unsearchable his judgments, and his paths beyond tracing out! Who has known the mind of the Lord? Or who has been his counselor?” (Romans 11:33-34).",
-        ],
-        author: "Jamey",
-        imageURL: "/static/images/avatar/2.jpg",
-        dateAdded: Date.now().toLocaleString(),
-        type: "faith-doubt",
+        type: "salvation",
     },
     {
         id: "art9",
@@ -177,7 +165,7 @@ export const dummyArticles: ArticleType[] = [
         author: "Jamey",
         imageURL: "/static/images/avatar/2.jpg",
         dateAdded: Date.now().toLocaleString(),
-        type: "relationships",
+        type: "christianity",
     },
 ];
 
