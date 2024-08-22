@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useAppSelector } from "../../store/hooks";
 import {
     Divider,
@@ -11,12 +11,11 @@ import {
 import { FavoriteSharp, ShareRounded } from "@mui/icons-material";
 
 export default function SingleArticleDetailsPage() {
+    const navigate = useNavigate();
     const { id } = useParams();
     const currentArticle = useAppSelector((state) =>
         state.articles.articles.find((article) => id === article.id)
     );
-
-    const navigatePage = () => {};
 
     return (
         <Paper sx={{ padding: "2rem 4rem" }} elevation={2}>
@@ -30,8 +29,8 @@ export default function SingleArticleDetailsPage() {
                 <Chip
                     label={currentArticle.type.toUpperCase()}
                     variant="outlined"
-                    onClick={navigatePage}
-                    onDelete={navigatePage}
+                    onClick={() => navigate(`/${currentArticle.type}`)}
+                    onDelete={() => navigate("/")}
                     sx={{ mr: 1 }}
                 />
                 <IconButton aria-label="favorite" color="primary">
