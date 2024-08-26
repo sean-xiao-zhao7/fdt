@@ -19,8 +19,8 @@ export default function HomePage() {
             <Typography variant="h1">Welcome!</Typography>
             <Divider sx={{ margin: "1.5rem 0" }} />
             <Typography variant="body1" sx={{ mb: 2 }}>
-                This is pastor Jamey's Christian Hermeneutic blog. Any question
-                is welcome.
+                This is Fellowship Church GTA's Christian Hermeneutic blog. Any
+                question is welcome.
                 <br />
                 Select topic you like from the top, or browse all articles
                 below.

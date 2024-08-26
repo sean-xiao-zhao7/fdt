@@ -15,7 +15,7 @@ import MenuBookIcon from "@mui/icons-material/MenuBook";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { Container, Divider, Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 
 const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
