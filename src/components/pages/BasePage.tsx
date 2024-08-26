@@ -8,11 +8,8 @@ import Typography from "@mui/material/Typography";
 import SingleArticleListItem from "../dashboard/SingleArticleItem";
 
 export default function BasePage({ title, articleType }) {
-    const allArticles = useAppSelector((state) =>
-        state.articles.articles.filter(
-            (article) => article.type === articleType
-        )
-    );
+    let allArticles = useAppSelector((state) => state.articles.articles);
+    allArticles = allArticles.filter((article) => article.type === articleType);
 
     if (!allArticles) {
         return <LinearProgress />;
