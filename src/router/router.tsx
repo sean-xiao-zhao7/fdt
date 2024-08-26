@@ -14,6 +14,7 @@ import LifestylePage from "../components/pages/LifestylePage";
 import JesusPage from "../components/pages/JesusPage";
 import TrinityPage from "../components/pages/TrinityPage";
 import ChristianityPage from "../components/pages/ChristianityPage";
+import AboutPage from "../components/pages/AboutPage";
 
 export const router = createBrowserRouter([
     {
@@ -32,6 +33,7 @@ export const router = createBrowserRouter([
             { element: <JesusPage />, path: "/jesus" },
             { element: <TrinityPage />, path: "/trinity" },
             { element: <ChristianityPage />, path: "/christianity" },
+            { element: <AboutPage />, path: "/about" },
             {
                 path: "/article/:id",
                 element: <SingleArticleDetailsPage />,

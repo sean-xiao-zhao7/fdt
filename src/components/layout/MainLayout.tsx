@@ -36,7 +36,7 @@ const MainLayout = function () {
             <Container maxWidth="lg">
                 <Grid container spacing={1} marginTop={1} marginBottom={2}>
                     <Grid container item xs={6}>
-                        <Link to="/lifestyle">
+                        <Link to="/about">
                             <Button size="large" startIcon={<InfoIcon />}>
                                 About
                             </Button>
