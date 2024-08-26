@@ -41,9 +41,15 @@ const MainLayout = function () {
                                 About
                             </Button>
                         </Link>
-                        <Button size="large" startIcon={<ChurchIcon />}>
-                            Fellowship Church
-                        </Button>
+                        <a
+                            href="https://www.fellowshipgta.ca/"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                        >
+                            <Button size="large" startIcon={<ChurchIcon />}>
+                                Fellowship Church
+                            </Button>
+                        </a>
                         <Button size="large" startIcon={<MenuBookIcon />}>
                             Other Resources
                         </Button>
