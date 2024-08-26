@@ -26,16 +26,32 @@ const MainLayout = function () {
                     height: "1rem",
                     background:
                         "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,127,153,1) 100%);",
-                    marginBottom: "2rem",
+                    marginBottom: "0.5rem",
                 }}
             ></Box>
             <Container maxWidth="lg">
+                <Box
+                    sx={{
+                        height: "2rem",
+                        marginBottom: "1.5rem",
+                    }}
+                >
+                    <Link to="/lifestyle">
+                        <Button size="large">About</Button>
+                    </Link>
+                    <Link to="/lifestyle">
+                        <Button size="large">Fellowship Church</Button>
+                    </Link>
+                    <Link to="/lifestyle">
+                        <Button size="large">My Favorites</Button>
+                    </Link>
+                </Box>
                 <Box>
                     <Typography
                         variant="h1"
                         component="h1"
                         textAlign={"center"}
-                        marginBottom={"2rem"}
+                        marginBottom={"1.5rem"}
                     >
                         <Link to="/">
                             Hermeneutic Questions & Answers by Pastor Jamey
