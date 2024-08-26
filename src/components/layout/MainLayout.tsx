@@ -34,8 +34,8 @@ const MainLayout = function () {
                 }}
             ></Box>
             <Container maxWidth="lg">
-                <Grid container spacing={1} marginTop={1} marginBottom={1.5}>
-                    <Grid container xs={6}>
+                <Grid container spacing={1} marginTop={1} marginBottom={2}>
+                    <Grid container item xs={6}>
                         <Link to="/lifestyle">
                             <Button size="large" startIcon={<InfoIcon />}>
                                 About
@@ -48,7 +48,7 @@ const MainLayout = function () {
                             Other Resources
                         </Button>
                     </Grid>
-                    <Grid container xs={6} justifyContent={"flex-end"}>
+                    <Grid container item xs={6} justifyContent={"flex-end"}>
                         <Link to="/lifestyle">
                             <Button size="large" startIcon={<GradeIcon />}>
                                 My Saved Articles
@@ -128,33 +128,6 @@ const MainLayout = function () {
                         <Outlet />
                     </Box>
                 </Box>
-                <Grid container spacing={1} marginTop={1}>
-                    <Grid container xs={6}>
-                        <Link to="/lifestyle">
-                            <Button size="large" startIcon={<InfoIcon />}>
-                                About
-                            </Button>
-                        </Link>
-                        <Button size="large" startIcon={<ChurchIcon />}>
-                            Fellowship Church
-                        </Button>
-                        <Button size="large" startIcon={<MenuBookIcon />}>
-                            Other Resources
-                        </Button>
-                    </Grid>
-                    <Grid
-                        container
-                        xs={6}
-                        justifyContent={"flex-end"}
-                        alignItems={"center"}
-                    >
-                        <Link to="/lifestyle">
-                            <Button size="large" startIcon={<GradeIcon />}>
-                                My Saved Articles
-                            </Button>
-                        </Link>
-                    </Grid>
-                </Grid>
             </Container>
             <Box
                 sx={{
