@@ -8,10 +8,14 @@ import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 
 import IconButton from "@mui/material/IconButton";
+import InfoIcon from "@mui/icons-material/Info";
+import ChurchIcon from "@mui/icons-material/Church";
+import GradeIcon from "@mui/icons-material/Grade";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import { Container, Typography } from "@mui/material";
+import { Container, Divider, Typography } from "@mui/material";
 
 const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
@@ -30,22 +34,28 @@ const MainLayout = function () {
                 }}
             ></Box>
             <Container maxWidth="lg">
-                <Box
-                    sx={{
-                        height: "2rem",
-                        marginBottom: "1.5rem",
-                    }}
-                >
-                    <Link to="/lifestyle">
-                        <Button size="large">About</Button>
-                    </Link>
-                    <Link to="/lifestyle">
-                        <Button size="large">Fellowship Church</Button>
-                    </Link>
-                    <Link to="/lifestyle">
-                        <Button size="large">My Favorites</Button>
-                    </Link>
-                </Box>
+                <Grid container spacing={1} marginTop={1} marginBottom={1.5}>
+                    <Grid container xs={6}>
+                        <Link to="/lifestyle">
+                            <Button size="large" startIcon={<InfoIcon />}>
+                                About
+                            </Button>
+                        </Link>
+                        <Button size="large" startIcon={<ChurchIcon />}>
+                            Fellowship Church
+                        </Button>
+                        <Button size="large" startIcon={<MenuBookIcon />}>
+                            Other Resources
+                        </Button>
+                    </Grid>
+                    <Grid container xs={6} justifyContent={"flex-end"}>
+                        <Link to="/lifestyle">
+                            <Button size="large" startIcon={<GradeIcon />}>
+                                My Saved Articles
+                            </Button>
+                        </Link>
+                    </Grid>
+                </Grid>
                 <Box>
                     <Typography
                         variant="h1"
@@ -54,7 +64,8 @@ const MainLayout = function () {
                         marginBottom={"1.5rem"}
                     >
                         <Link to="/">
-                            Hermeneutic Questions & Answers by Pastor Jamey
+                            Hermeneutic Questions & Answers by Fellowship Church
+                            GTA
                         </Link>
                     </Typography>
                     <Grid container justifyContent={"center"} spacing={1}>
@@ -117,16 +128,52 @@ const MainLayout = function () {
                         <Outlet />
                     </Box>
                 </Box>
+                <Grid container spacing={1} marginTop={1}>
+                    <Grid container xs={6}>
+                        <Link to="/lifestyle">
+                            <Button size="large" startIcon={<InfoIcon />}>
+                                About
+                            </Button>
+                        </Link>
+                        <Button size="large" startIcon={<ChurchIcon />}>
+                            Fellowship Church
+                        </Button>
+                        <Button size="large" startIcon={<MenuBookIcon />}>
+                            Other Resources
+                        </Button>
+                    </Grid>
+                    <Grid
+                        container
+                        xs={6}
+                        justifyContent={"flex-end"}
+                        alignItems={"center"}
+                    >
+                        <Link to="/lifestyle">
+                            <Button size="large" startIcon={<GradeIcon />}>
+                                My Saved Articles
+                            </Button>
+                        </Link>
+                    </Grid>
+                </Grid>
             </Container>
             <Box
                 sx={{
-                    height: "2rem",
+                    padding: "1rem 0",
+                    textAlign: "center",
                     background:
                         "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,127,153,1) 100%);",
-                    marginTop: "2rem",
+                    marginTop: "1rem",
                 }}
             >
-                {/* <Typography variant="h2">Contact Jamey any time.</Typography> */}
+                <Typography
+                    variant="body1"
+                    sx={{
+                        color: "white",
+                        fontFamily: "'Bebas Neue', sans-serif",
+                    }}
+                >
+                    &copy; Fellowship Church GTA {new Date().getFullYear()}
+                </Typography>
             </Box>
         </>
     );
