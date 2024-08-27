@@ -50,9 +50,11 @@ const MainLayout = function () {
                                 Fellowship Church
                             </Button>
                         </a>
-                        <Button size="large" startIcon={<MenuBookIcon />}>
-                            Other Resources
-                        </Button>
+                        <Link to="/other-resources">
+                            <Button size="large" startIcon={<MenuBookIcon />}>
+                                Other Resources
+                            </Button>
+                        </Link>
                     </Grid>
                     <Grid container item xs={6} justifyContent={"flex-end"}>
                         <Link to="/lifestyle">
