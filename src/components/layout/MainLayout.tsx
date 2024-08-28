@@ -57,7 +57,7 @@ const MainLayout = function () {
                         </Link>
                     </Grid>
                     <Grid container item xs={6} justifyContent={"flex-end"}>
-                        <Link to="/lifestyle">
+                        <Link to="/my-saved-articles">
                             <Button size="large" startIcon={<GradeIcon />}>
                                 My Saved Articles
                             </Button>

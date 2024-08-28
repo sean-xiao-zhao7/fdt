@@ -36,6 +36,7 @@ export const router = createBrowserRouter([
             { element: <ChristianityPage />, path: "/christianity" },
             { element: <AboutPage />, path: "/about" },
             { element: <OtherResourcesPage />, path: "/other-resources" },
+            { element: <MySavedArticles />, path: "/my-saved-articles" },
             {
                 path: "/article/:id",
                 element: <SingleArticleDetailsPage />,
